@@ -8,7 +8,8 @@ authors = [
     {name = "Gabriel", email = "gabrieldomingos13@gmail.com"},
 ]
 dependencies = [
-    "django>=4.1.7",
+    "django>=4.2",
+    "djangorestframework>=3.14.0",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
