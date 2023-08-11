@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "corsheaders",
+    "drf_spectacular",
     "rest_framework",
     "rest_framework_simplejwt",
     "usuario",
@@ -142,3 +143,13 @@ CORS_ALLOW_ALL_ORIGINS = True
 # }
 
 AUTH_USER_MODEL = "usuario.Usuario"
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Livraria API",
+    "DESCRIPTION": "API para gerenciamento de livraria, incluindo endpoints e documentação.",
+    "VERSION": "1.0.0",
+}
