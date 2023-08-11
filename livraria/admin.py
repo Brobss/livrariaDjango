@@ -4,8 +4,10 @@ from .models import Categoria
 from .models import Editora
 from .models import Autor
 from .models import Livro
+from .models import Compra
 
 admin.site.register(Categoria)
 admin.site.register(Editora)
 admin.site.register(Autor)
 admin.site.register(Livro)
+admin.site.register(Compra)
